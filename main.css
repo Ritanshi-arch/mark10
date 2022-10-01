@@ -1,0 +1,51 @@
+:root {
+    --primary-dark:  #120586;
+    --primary--light: #cfe88c;
+
+}
+
+h1 {
+    text-align: center;
+    
+   }
+
+.bill-amount {
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    border-radius: 1rem;
+    margin: auto;
+}
+
+body {
+    color: var(--primary--light);
+    background-color: var(--primary-dark);
+    margin: auto;
+}
+
+#cash-given {
+    text-align: center;
+}
+
+#bill-amount {
+    text-align: center;
+}
+
+.check-button {
+    display: block;
+    margin-top: 1rem;
+    background: transparent;
+    color: var(--primary--light);
+    margin: auto;
+    border-color: var(--primary--light);
+    border-radius: 1rem;
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+}
