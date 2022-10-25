@@ -1,0 +1,62 @@
+:root {
+    --primary-dark:  #0c6f41;
+    --primary--light: #cfe88c;
+
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: 50px;
+    
+   }
+
+.bill-amount {
+    margin: 4px;
+    display: block;
+    padding: 3px;
+   
+}
+
+.container{
+    max-width: 80rem;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 40px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+  background-color: #17a76e;
+  height: 100vh;
+}
+
+#cash-given {
+    margin: 4px;
+    display: block;
+    padding: 3px;
+}
+
+#bill-amount {
+    margin: 4px;
+    display: block;
+    padding: 3px;
+}
+
+#check-button {
+    background-color: #eb2929;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 30px;
+    color: rgb(239, 239, 236);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 6px;
+}
+
