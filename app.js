@@ -5,25 +5,26 @@ const message = document.querySelector("#error-message");
 const availableNotes = [2000, 500, 100, 20,10,5,1];
 const noOfNotes = document.querySelectorAll(".no-of-notes")
 checkButton.addEventListener("click", function validateBillAndCashAmount() {
-   
-   hideMessage();
-   if (billAmount.value > 0) {
-        if (cashGiven.value >= billAmount.value) {
-            const amountToBeReturned = cashGiven.value - billAmount.value;
-            calculateChange(amountToBeReturned);
-            showMessage("Total change to be returned : " + amountToBeReturned )
-        } else if (billAmount.value > cashGiven.value){
-            showMessage("Cash is not sufficient 😮‍💨, Do you wanna wash plates? ")
-        } 
-        else {
-            showMessage(
-                "Do you wanna wash plates?");
-   } } else {
-       showMessage("Invalid Bill Amount ( Check inputs )");
-   } 
-});
+  
+    hideMessage();
+    if (billAmount.value > 0) {
+         if (cashGiven.value >= billAmount.value) {
+             const amountToBeReturned = cashGiven.value - billAmount.value;
+             calculateChange(amountToBeReturned);
+             showMessage("Total change to be returned : " + amountToBeReturned )
+         } else if (billAmount.value > cashGiven.value){
+             showMessage("Cash is not sufficient 😮‍💨, I guess you want to wash plates? ")
+         } 
+         else {
+             showMessage(
+                 "I guess you want to wash plates?");
+    } } else {
+        showMessage("Invalid Bill Amount ( Check inputs )");
+    } 
+ });
+
 // processing part
- function calculateChange(amountToBeReturned) {
+function calculateChange(amountToBeReturned) {
     //go all the availabe 
      for(let i = 0; i < availableNotes.length; i++) {
        // no over all the available for the denomination
@@ -45,5 +46,3 @@ function showMessage(msg) {
     message.style.display = "block";
     message.innerText = msg;
 }
-
-// 
